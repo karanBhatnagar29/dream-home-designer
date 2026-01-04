@@ -13,25 +13,32 @@ const navLinks = [
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
+  const [isPastHero, setIsPastHero] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
+      const heroSection = document.querySelector("#home");
+      const heroHeight = heroSection?.clientHeight || window.innerHeight;
       
       // Determine if scrolled past initial area
       setIsScrolled(currentScrollY > 50);
       
-      // Show/hide based on scroll direction
+      // Check if past hero section
+      const pastHero = currentScrollY > heroHeight - 100;
+      setIsPastHero(pastHero);
+      
+      // Show/hide logic
       if (currentScrollY < 100) {
         // Always show near top
         setIsVisible(true);
-      } else if (currentScrollY < lastScrollY) {
-        // Scrolling up - show
+      } else if (pastHero) {
+        // Past hero - always show
         setIsVisible(true);
-      } else if (currentScrollY > lastScrollY && currentScrollY > 200) {
-        // Scrolling down past threshold - hide
+      } else if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        // Scrolling down within hero - hide
         setIsVisible(false);
       }
       
@@ -89,17 +96,14 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center">
             <div className="flex items-center gap-1 bg-tent-dark/50 rounded-full px-2 py-1.5">
-              {navLinks.map((link, index) => (
+              {navLinks.map((link) => (
                 <button
                   key={link.name}
                   onClick={() => scrollToSection(link.href)}
                   className="relative px-4 py-2 text-secondary-foreground/70 hover:text-secondary-foreground transition-colors duration-300 text-sm tracking-wide group"
                 >
                   <span className="relative z-10">{link.name}</span>
-                  <motion.span
-                    className="absolute inset-0 bg-tent-tan/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                    layoutId="navHover"
-                  />
+                  <span className="absolute inset-0 bg-tent-tan/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </button>
               ))}
             </div>

@@ -5,6 +5,7 @@ import Products from "@/components/Products";
 import Blog from "@/components/Blog";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import BackToTop from "@/components/BackToTop";
 
 const Index = () => {
   return (
@@ -16,6 +17,7 @@ const Index = () => {
       <Blog />
       <Contact />
       <Footer />
+      <BackToTop />
     </main>
   );
 };
