@@ -4,11 +4,11 @@ import { useRef } from "react";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
-import tentSwiss from "@/assets/tent-swiss.jpg";
-import safariTent1 from "@/assets/safari-tent-1.jpg";
-import tentMaharaja from "@/assets/tent-maharaja.jpg";
-import tentConical from "@/assets/tent-conical.jpg";
-import desertTent1 from "@/assets/desert-tent-1.jpg";
+import swissTentHero from "@/assets/Swiss Luxury Tent/IMG_4382.jpg";
+import safariTent3 from "@/assets/safari-tent-3.jpg";
+import maharajaTentHero from "@/assets/Maha raja/IMG_8708.jpg";
+import conicalTentHero from "@/assets/Three - Conical Tent/1.png";
+import desertTentHero from "@/assets/desert-tent-5.jpg";
 import heroTent from "@/assets/hero-tent.jpg";
 
 const products = [
@@ -16,35 +16,35 @@ const products = [
     id: 1,
     name: "Modified Safari Tent",
     description: "Classic safari-style luxury tent with elegant scalloped rooflines",
-    image: safariTent1,
+    image: safariTent3,
     link: "/products/modified-safari-tent",
   },
   {
     id: 2,
     name: "Swiss Luxury Tent",
     description: "Premium interiors with Swiss-inspired elegance",
-    image: tentSwiss,
-    link: null,
+    image: swissTentHero,
+    link: "/products/swiss-luxury-tent",
   },
   {
     id: 3,
     name: "Maharaja Tent",
     description: "Royal Indian design with ornate traditional details",
-    image: tentMaharaja,
-    link: null,
+    image: maharajaTentHero,
+    link: "/products/maharaja-tent",
   },
   {
     id: 4,
-    name: "Two-Conical Tent",
-    description: "Distinctive double-peaked architectural design",
-    image: tentConical,
-    link: null,
+    name: "Three-Conical Tent",
+    description: "Distinctive triple-peaked architectural design",
+    image: conicalTentHero,
+    link: "/products/three-conical-tent",
   },
   {
     id: 5,
     name: "African Desert Tent",
     description: "Designed for harsh desert environments with style",
-    image: desertTent1,
+    image: desertTentHero,
     link: "/products/african-desert-tent",
   },
   {

@@ -19,8 +19,8 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Visit Us",
-    value: "196, UMAID HERITAGE JODHPUR-342001",
-    href: "https://maps.google.com",
+    value: "Guda road JODHPUR-342001",
+    href: "https://www.google.com/maps?q=26.217145919799805,73.05487823486328&z=17&hl=en",
   },
   {
     icon: Clock,
@@ -74,6 +74,8 @@ const Contact = () => {
                   {item.href ? (
                     <a
                       href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-secondary-foreground font-medium hover:text-tent-tan transition-colors duration-300 text-sm"
                     >
                       {item.value}
@@ -97,7 +99,7 @@ const Contact = () => {
           >
             <div className="rounded-lg overflow-hidden shadow-elegant h-full min-h-[400px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3577.8893695766386!2d73.0243!3d26.2389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDE0JzIwLjAiTiA3M8KwMDEnMjcuNSJF!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin"
+                src="https://maps.google.com/maps?q=26.217145919799805,73.05487823486328&z=17&hl=en&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0, minHeight: "400px" }}

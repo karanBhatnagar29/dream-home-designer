@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { ArrowLeft, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 import desertTent1 from "@/assets/desert-tent-1.jpg";
 import desertTent2 from "@/assets/desert-tent-2.jpg";
@@ -32,13 +34,37 @@ const AfricanDesertTentGallery = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <motion.header
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border"
-      >
-        <div className="container mx-auto px-6 py-4 flex items-center justify-between">
+      <Navbar />
+      {/* Header - Hidden or removed since Navbar replaces it, but keeping structure if needed for spacing, though Navbar handles it. 
+          Actually, the plan says replace local header. 
+          The local header provided a title and back link. Navbar provides navigation. 
+          We should keep a sub-header for "Back to Products" if desired, or let Navbar handle it?
+          The other galleries kept a "Header" section with "Back to Products". 
+          Let's keep the sub-header pattern from other galleries for consistency.
+      */}
+      <header className="fixed top-20 left-0 right-0 z-40 bg-background/95 backdrop-blur-md border-b border-border hidden"> 
+        {/* Hiding duplicate header logic from previous implementation to match new style or just removing it?
+           The other galleries look like:
+           <div className="min-h-screen bg-background pt-20">
+             <Navbar />
+             <header className="bg-tent-dark py-6"> ... Back link ... </header>
+           
+           African gallery had a fancy motion.header. I will replace it with the standard pattern for consistency if that's implied, 
+           or just keep Navbar and add the content below. 
+           Let's match the other galleries: 
+           - Container pt-20
+           - Navbar
+           - Header with sub-nav
+        */}
+      </header> 
+      
+      {/* Recreating the sub-header pattern to match others or adapting existing one. 
+          The existing one was fixed top.
+          Let's verify what I'm replacing. lines 36-54.
+      */}
+      
+      <header className="pt-24 pb-6 bg-background border-b border-border">
+         <div className="container mx-auto px-6 flex items-center justify-between">
           <Link
             to="/#products"
             className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
@@ -46,15 +72,12 @@ const AfricanDesertTentGallery = () => {
             <ArrowLeft className="w-5 h-5" />
             <span className="font-medium">Back to Products</span>
           </Link>
-          <h1 className="font-serif text-xl md:text-2xl text-foreground">
-            African Desert Tent
-          </h1>
-          <div className="w-24" />
-        </div>
-      </motion.header>
+          {/* Title was in header before, maybe keep it there? */}
+         </div>
+      </header>
 
       {/* Gallery Content */}
-      <main className="pt-24 pb-16">
+      <main className="pb-16">
         <div className="container mx-auto px-6">
           {/* Hero Section */}
           <motion.div
@@ -136,6 +159,8 @@ const AfricanDesertTentGallery = () => {
           </motion.div>
         </div>
       </main>
+
+      <Footer />
 
       {/* Lightbox Modal */}
       {selectedImage !== null && (

@@ -5,37 +5,48 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-import safariTent1 from "@/assets/safari-tent-1.jpg";
-import safariTent2 from "@/assets/safari-tent-2.jpg";
-import safariTent3 from "@/assets/safari-tent-3.jpg";
-import safariTent4 from "@/assets/safari-tent-4.jpg";
-import safariTent5 from "@/assets/safari-tent-5.jpg";
-import safariTent6 from "@/assets/safari-tent-6.jpg";
+import img1 from "@/assets/Three - Conical Tent/1.png";
+import img2 from "@/assets/Three - Conical Tent/1cae65ef-e705-492f-b33e-bc7d249ab418.JPG";
+import img3 from "@/assets/Three - Conical Tent/2c851035-07b5-4501-a0b3-678c3519f9e4.JPG";
+import img4 from "@/assets/Three - Conical Tent/38885a44-6e99-454a-b8de-89c7be50aed9.JPG";
+import img5 from "@/assets/Three - Conical Tent/784146b2-1aaa-4335-ad3b-9a3df9da5f21.JPG";
+import img6 from "@/assets/Three - Conical Tent/IMG_9006.JPG";
+import img7 from "@/assets/Three - Conical Tent/d15e5f5a-7466-4b9a-9658-106341e136a5.JPG";
+import img8 from "@/assets/Three - Conical Tent/dac7c1b5-d0c4-4f9c-87a5-f585d6b57409.JPG";
 
 const images = [
-  { src: safariTent1, alt: "Modified Safari Tent - Side view with scalloped roof" },
-  { src: safariTent2, alt: "Modified Safari Tent - Back angle view" },
-  { src: safariTent3, alt: "Modified Safari Tent - Front entrance view" },
-  { src: safariTent4, alt: "Modified Safari Tent - With wooden porch" },
-  { src: safariTent5, alt: "Modified Safari Tent - Traditional style" },
-  { src: safariTent6, alt: "Modified Safari Tent - Row of tents" },
+  {
+    src: img1,
+    alt: "Three Conical Tent - Exterior view",
+  },
+  { src: img2, alt: "Three Conical Tent - Side angle" },
+  { src: img3, alt: "Three Conical Tent - Interior details" },
+  { src: img4, alt: "Three Conical Tent - Entrance view" },
+  { src: img5, alt: "Three Conical Tent - Wide shot" },
+  { src: img6, alt: "Three Conical Tent - Night view" },
+  { src: img7, alt: "Three Conical Tent - Additional view 1" },
+  { src: img8, alt: "Three Conical Tent - Additional view 2" },
 ];
 
-const ModifiedSafariTentGallery = () => {
+const ThreeConicalTentGallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
   const openLightbox = (index: number) => setSelectedImage(index);
   const closeLightbox = () => setSelectedImage(null);
-  
+
   const goToPrevious = () => {
     if (selectedImage !== null) {
-      setSelectedImage(selectedImage === 0 ? images.length - 1 : selectedImage - 1);
+      setSelectedImage(
+        selectedImage === 0 ? images.length - 1 : selectedImage - 1,
+      );
     }
   };
-  
+
   const goToNext = () => {
     if (selectedImage !== null) {
-      setSelectedImage(selectedImage === images.length - 1 ? 0 : selectedImage + 1);
+      setSelectedImage(
+        selectedImage === images.length - 1 ? 0 : selectedImage + 1,
+      );
     }
   };
 
@@ -68,11 +79,11 @@ const ModifiedSafariTentGallery = () => {
               Product Gallery
             </p>
             <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-6">
-              Modified Safari Tent
+              Three - Conical Tent
             </h1>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              A refined take on the classic safari tent design, featuring elegant scalloped rooflines, 
-              spacious interiors, and versatile configurations suitable for luxury resorts and glamping sites.
+              A distinctive design featuring three high peaks, providing ample interior space
+              and a dramatic profile against the skyline.
             </p>
           </motion.div>
 
@@ -113,53 +124,41 @@ const ModifiedSafariTentGallery = () => {
             <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-8 text-center">
               Technical Specifications
             </h2>
-            
+
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-4">
-                <h3 className="font-serif text-xl text-tent-tan mb-4">Dimensions</h3>
+                <h3 className="font-serif text-xl text-tent-tan mb-4">
+                  Dimensions
+                </h3>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex justify-between border-b border-border pb-2">
-                    <span>Standard Length</span>
-                    <span className="text-foreground">12m - 20m</span>
-                  </li>
-                  <li className="flex justify-between border-b border-border pb-2">
-                    <span>Width</span>
-                    <span className="text-foreground">4m - 6m</span>
+                    <span>Standard Size</span>
+                    <span className="text-foreground">Customizable</span>
                   </li>
                   <li className="flex justify-between border-b border-border pb-2">
                     <span>Center Height</span>
-                    <span className="text-foreground">3.5m - 4m</span>
-                  </li>
-                  <li className="flex justify-between border-b border-border pb-2">
-                    <span>Side Height</span>
-                    <span className="text-foreground">2m - 2.5m</span>
+                    <span className="text-foreground">High Peak Design</span>
                   </li>
                 </ul>
               </div>
-              
+
               <div className="space-y-4">
-                <h3 className="font-serif text-xl text-tent-tan mb-4">Materials</h3>
+                <h3 className="font-serif text-xl text-tent-tan mb-4">
+                  Materials
+                </h3>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex justify-between border-b border-border pb-2">
-                    <span>Roof Canvas</span>
-                    <span className="text-foreground">550 GSM Cotton</span>
+                    <span>Fabric</span>
+                    <span className="text-foreground">Premium Canvas</span>
                   </li>
                   <li className="flex justify-between border-b border-border pb-2">
-                    <span>Wall Canvas</span>
-                    <span className="text-foreground">380 GSM Cotton</span>
-                  </li>
-                  <li className="flex justify-between border-b border-border pb-2">
-                    <span>Frame</span>
-                    <span className="text-foreground">MS Powder Coated</span>
-                  </li>
-                  <li className="flex justify-between border-b border-border pb-2">
-                    <span>Finish</span>
-                    <span className="text-foreground">Scalloped Edge</span>
+                    <span>Structure</span>
+                    <span className="text-foreground">Heavy Duty Frame</span>
                   </li>
                 </ul>
               </div>
             </div>
-            
+
             <div className="mt-12 text-center">
               <Link
                 to="/#contact"
@@ -189,21 +188,27 @@ const ModifiedSafariTentGallery = () => {
             >
               <X className="w-8 h-8" />
             </button>
-            
+
             <button
               className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 text-white hover:text-tent-tan transition-colors z-10 p-2"
-              onClick={(e) => { e.stopPropagation(); goToPrevious(); }}
+              onClick={(e) => {
+                e.stopPropagation();
+                goToPrevious();
+              }}
             >
               <ChevronLeft className="w-10 h-10" />
             </button>
-            
+
             <button
               className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 text-white hover:text-tent-tan transition-colors z-10 p-2"
-              onClick={(e) => { e.stopPropagation(); goToNext(); }}
+              onClick={(e) => {
+                e.stopPropagation();
+                goToNext();
+              }}
             >
               <ChevronRight className="w-10 h-10" />
             </button>
-            
+
             <motion.img
               key={selectedImage}
               initial={{ opacity: 0, scale: 0.9 }}
@@ -215,7 +220,7 @@ const ModifiedSafariTentGallery = () => {
               className="max-w-[90vw] max-h-[85vh] object-contain rounded-lg"
               onClick={(e) => e.stopPropagation()}
             />
-            
+
             <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/70 text-sm">
               {selectedImage + 1} / {images.length}
             </div>
@@ -226,4 +231,4 @@ const ModifiedSafariTentGallery = () => {
   );
 };
 
-export default ModifiedSafariTentGallery;
+export default ThreeConicalTentGallery;

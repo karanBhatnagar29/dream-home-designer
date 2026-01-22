@@ -5,43 +5,62 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-import safariTent1 from "@/assets/safari-tent-1.jpg";
-import safariTent2 from "@/assets/safari-tent-2.jpg";
-import safariTent3 from "@/assets/safari-tent-3.jpg";
-import safariTent4 from "@/assets/safari-tent-4.jpg";
-import safariTent5 from "@/assets/safari-tent-5.jpg";
-import safariTent6 from "@/assets/safari-tent-6.jpg";
+import img1 from "@/assets/Maha raja/09b3394d-9460-49dd-9bd0-a36c42b9d5f6.JPG";
+import img2 from "@/assets/Maha raja/25aec90a-dac3-4ad1-88a3-6f0a3793fb25.jpg";
+import img3 from "@/assets/Maha raja/300d8737-f510-4625-bcbb-504135cc1d25.JPG";
+import img4 from "@/assets/Maha raja/359258b9-f908-4819-be13-f37f4f867d35.JPG";
+import img5 from "@/assets/Maha raja/5e3f87ce-9d5f-4522-95a3-894f8321cb46.JPG";
+import img6 from "@/assets/Maha raja/IMG_4519.jpg";
+import img7 from "@/assets/Maha raja/IMG_4523.jpg";
+import img8 from "@/assets/Maha raja/IMG_5215.JPG";
+import img9 from "@/assets/Maha raja/IMG_8059.JPG";
+import img10 from "@/assets/Maha raja/IMG_8708.jpg";
+import img11 from "@/assets/Maha raja/a8217797-e2de-4f79-b500-ad276bedeb00.JPG";
+import img12 from "@/assets/Maha raja/b53071cf-9bd5-437a-9ec8-762e663f88d2.JPG";
+import img13 from "@/assets/Maha raja/e6020b30-793a-43cf-b52a-402ab6eec457.JPG";
 
 const images = [
-  { src: safariTent1, alt: "Modified Safari Tent - Side view with scalloped roof" },
-  { src: safariTent2, alt: "Modified Safari Tent - Back angle view" },
-  { src: safariTent3, alt: "Modified Safari Tent - Front entrance view" },
-  { src: safariTent4, alt: "Modified Safari Tent - With wooden porch" },
-  { src: safariTent5, alt: "Modified Safari Tent - Traditional style" },
-  { src: safariTent6, alt: "Modified Safari Tent - Row of tents" },
+  { src: img1, alt: "Maharaja Tent - Royal layout" },
+  { src: img2, alt: "Maharaja Tent - Exterior view" },
+  { src: img3, alt: "Maharaja Tent - Interior detail" },
+  { src: img4, alt: "Maharaja Tent - Ceiling pattern" },
+  { src: img5, alt: "Maharaja Tent - Room setup" },
+  { src: img6, alt: "Maharaja Tent - Entrance" },
+  { src: img7, alt: "Maharaja Tent - Side view" },
+  { src: img8, alt: "Maharaja Tent - Bedding arrangement" },
+  { src: img9, alt: "Maharaja Tent - Furniture detail" },
+  { src: img10, alt: "Maharaja Tent - Night view" },
+  { src: img11, alt: "Maharaja Tent - Bathroom setup" },
+  { src: img12, alt: "Maharaja Tent - Washbasin area" },
+  { src: img13, alt: "Maharaja Tent - Overall structure" },
 ];
 
-const ModifiedSafariTentGallery = () => {
+const MaharajaTentGallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
   const openLightbox = (index: number) => setSelectedImage(index);
   const closeLightbox = () => setSelectedImage(null);
-  
+
   const goToPrevious = () => {
     if (selectedImage !== null) {
-      setSelectedImage(selectedImage === 0 ? images.length - 1 : selectedImage - 1);
+      setSelectedImage(
+        selectedImage === 0 ? images.length - 1 : selectedImage - 1,
+      );
     }
   };
-  
+
   const goToNext = () => {
     if (selectedImage !== null) {
-      setSelectedImage(selectedImage === images.length - 1 ? 0 : selectedImage + 1);
+      setSelectedImage(
+        selectedImage === images.length - 1 ? 0 : selectedImage + 1,
+      );
     }
   };
 
   return (
     <div className="min-h-screen bg-background pt-20">
       <Navbar />
+      
       {/* Header */}
       <header className="bg-tent-dark py-6">
         <div className="container mx-auto px-6">
@@ -68,11 +87,11 @@ const ModifiedSafariTentGallery = () => {
               Product Gallery
             </p>
             <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-6">
-              Modified Safari Tent
+              Maharaja Tent
             </h1>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              A refined take on the classic safari tent design, featuring elegant scalloped rooflines, 
-              spacious interiors, and versatile configurations suitable for luxury resorts and glamping sites.
+              Experience royalty with our Maharaja Tents, featuring ornate traditional details, 
+              spacious interiors, and a design that evokes the grandeur of Indian palaces.
             </p>
           </motion.div>
 
@@ -113,53 +132,41 @@ const ModifiedSafariTentGallery = () => {
             <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-8 text-center">
               Technical Specifications
             </h2>
-            
+
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-4">
-                <h3 className="font-serif text-xl text-tent-tan mb-4">Dimensions</h3>
+                <h3 className="font-serif text-xl text-tent-tan mb-4">
+                  Dimensions
+                </h3>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex justify-between border-b border-border pb-2">
-                    <span>Standard Length</span>
-                    <span className="text-foreground">12m - 20m</span>
-                  </li>
-                  <li className="flex justify-between border-b border-border pb-2">
-                    <span>Width</span>
-                    <span className="text-foreground">4m - 6m</span>
+                    <span>Size</span>
+                    <span className="text-foreground">Customizable (e.g. 14'x28')</span>
                   </li>
                   <li className="flex justify-between border-b border-border pb-2">
                     <span>Center Height</span>
-                    <span className="text-foreground">3.5m - 4m</span>
-                  </li>
-                  <li className="flex justify-between border-b border-border pb-2">
-                    <span>Side Height</span>
-                    <span className="text-foreground">2m - 2.5m</span>
+                    <span className="text-foreground">3.5m - 4.5m</span>
                   </li>
                 </ul>
               </div>
-              
+
               <div className="space-y-4">
-                <h3 className="font-serif text-xl text-tent-tan mb-4">Materials</h3>
+                <h3 className="font-serif text-xl text-tent-tan mb-4">
+                  Materials
+                </h3>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex justify-between border-b border-border pb-2">
-                    <span>Roof Canvas</span>
-                    <span className="text-foreground">550 GSM Cotton</span>
+                    <span>Outer Layer</span>
+                    <span className="text-foreground">Waterproof Canvas</span>
                   </li>
                   <li className="flex justify-between border-b border-border pb-2">
-                    <span>Wall Canvas</span>
-                    <span className="text-foreground">380 GSM Cotton</span>
-                  </li>
-                  <li className="flex justify-between border-b border-border pb-2">
-                    <span>Frame</span>
-                    <span className="text-foreground">MS Powder Coated</span>
-                  </li>
-                  <li className="flex justify-between border-b border-border pb-2">
-                    <span>Finish</span>
-                    <span className="text-foreground">Scalloped Edge</span>
+                    <span>Inner Lining</span>
+                    <span className="text-foreground">Printed Cotton / Velvet</span>
                   </li>
                 </ul>
               </div>
             </div>
-            
+
             <div className="mt-12 text-center">
               <Link
                 to="/#contact"
@@ -171,8 +178,9 @@ const ModifiedSafariTentGallery = () => {
           </motion.div>
         </div>
       </section>
-
+      
       <Footer />
+
       {/* Lightbox */}
       <AnimatePresence>
         {selectedImage !== null && (
@@ -189,21 +197,27 @@ const ModifiedSafariTentGallery = () => {
             >
               <X className="w-8 h-8" />
             </button>
-            
+
             <button
               className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 text-white hover:text-tent-tan transition-colors z-10 p-2"
-              onClick={(e) => { e.stopPropagation(); goToPrevious(); }}
+              onClick={(e) => {
+                e.stopPropagation();
+                goToPrevious();
+              }}
             >
               <ChevronLeft className="w-10 h-10" />
             </button>
-            
+
             <button
               className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 text-white hover:text-tent-tan transition-colors z-10 p-2"
-              onClick={(e) => { e.stopPropagation(); goToNext(); }}
+              onClick={(e) => {
+                e.stopPropagation();
+                goToNext();
+              }}
             >
               <ChevronRight className="w-10 h-10" />
             </button>
-            
+
             <motion.img
               key={selectedImage}
               initial={{ opacity: 0, scale: 0.9 }}
@@ -215,7 +229,7 @@ const ModifiedSafariTentGallery = () => {
               className="max-w-[90vw] max-h-[85vh] object-contain rounded-lg"
               onClick={(e) => e.stopPropagation()}
             />
-            
+
             <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/70 text-sm">
               {selectedImage + 1} / {images.length}
             </div>
@@ -226,4 +240,4 @@ const ModifiedSafariTentGallery = () => {
   );
 };
 
-export default ModifiedSafariTentGallery;
+export default MaharajaTentGallery;

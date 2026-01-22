@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone, Sparkles } from "lucide-react";
+import { useLocation, useNavigate } from "react-router-dom";
+import logo from "@/assets/tent_logo.png";
 
 const navLinks = [
   { name: "Home", href: "#home" },
@@ -16,6 +18,9 @@ const Navbar = () => {
   const [isPastHero, setIsPastHero] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,11 +55,23 @@ const Navbar = () => {
   }, [lastScrollY]);
 
   const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
     setIsMobileMenuOpen(false);
+    
+    if (location.pathname !== "/") {
+      navigate("/");
+      // Wait for navigation to complete before scrolling
+      setTimeout(() => {
+        const element = document.querySelector(href);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    } else {
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
   };
 
   return (
@@ -79,9 +96,8 @@ const Navbar = () => {
             onClick={(e) => { e.preventDefault(); scrollToSection("#home"); }}
             className="flex items-center gap-3 group"
           >
-            <div className="relative w-11 h-11 rounded-full bg-gradient-to-br from-tent-tan to-tent-gold flex items-center justify-center shadow-lg group-hover:shadow-tent-tan/30 transition-shadow duration-300">
-              <span className="font-serif text-secondary text-base font-bold">L&C</span>
-              <div className="absolute inset-0 rounded-full bg-tent-tan/20 animate-ping opacity-0 group-hover:opacity-100" />
+            <div className="relative w-11 h-11 rounded-full bg-white flex items-center justify-center shadow-lg group-hover:shadow-tent-tan/30 transition-shadow duration-300 overflow-hidden">
+               <img src={logo} alt="L&C Logo" className="w-full h-full object-contain" />
             </div>
             <div className="hidden sm:block">
               <span className="font-serif text-secondary-foreground text-base tracking-wide block leading-tight">

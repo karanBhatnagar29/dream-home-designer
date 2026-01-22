@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Facebook, Instagram, Twitter, Linkedin, ArrowUp } from "lucide-react";
+import logo from "@/assets/tent_logo.png";
 
 const footerLinks = {
   products: [
@@ -45,8 +46,8 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="col-span-2 md:col-span-4 lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 rounded-full bg-tent-tan flex items-center justify-center">
-                <span className="font-serif text-secondary text-lg font-bold">L&C</span>
+              <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center overflow-hidden">
+                <img src={logo} alt="L&C Logo" className="w-full h-full object-contain" />
               </div>
               <span className="font-serif text-secondary-foreground text-xl">
                 Luxury & Cozy

@@ -5,20 +5,33 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-import safariTent1 from "@/assets/safari-tent-1.jpg";
-import safariTent2 from "@/assets/safari-tent-2.jpg";
-import safariTent3 from "@/assets/safari-tent-3.jpg";
-import safariTent4 from "@/assets/safari-tent-4.jpg";
-import safariTent5 from "@/assets/safari-tent-5.jpg";
-import safariTent6 from "@/assets/safari-tent-6.jpg";
+import swissTent1 from "@/assets/Swiss Luxury Tent/159c0ef6-a432-4ebb-8e95-2b25f290abc6.JPG";
+import swissTent2 from "@/assets/Swiss Luxury Tent/2b0c46fe-54fe-4b80-9ada-a5f00c774672.JPG";
+import swissTent3 from "@/assets/Swiss Luxury Tent/5ea3650e-b30a-400b-b8bc-d58ed6fb2feb.JPG";
+import swissTent4 from "@/assets/Swiss Luxury Tent/5f15e367-a893-4908-926e-ec71c44ae2ad.JPG";
+import swissTent5 from "@/assets/Swiss Luxury Tent/82e57b13-51de-4f9f-837f-392545b8a3ff.JPG";
+import swissTent6 from "@/assets/Swiss Luxury Tent/910c8e47-f9c8-4601-a4d2-c98f058cd84e.JPG";
+import swissTent7 from "@/assets/Swiss Luxury Tent/IMG_0938.AVIF";
+import swissTent8 from "@/assets/Swiss Luxury Tent/IMG_4382.jpg";
+import swissTent9 from "@/assets/Swiss Luxury Tent/a642a452-a79d-48b6-845e-ea8f6f51a0d6.JPG";
+import swissTent10 from "@/assets/Swiss Luxury Tent/ce9d9e4e-8ec8-47a5-918f-5cfdb8c0e387.JPG";
+import swissTent11 from "@/assets/Swiss Luxury Tent/fa06b241-d747-48f8-8716-638375546ed8.JPG";
 
 const images = [
-  { src: safariTent1, alt: "Modified Safari Tent - Side view with scalloped roof" },
-  { src: safariTent2, alt: "Modified Safari Tent - Back angle view" },
-  { src: safariTent3, alt: "Modified Safari Tent - Front entrance view" },
-  { src: safariTent4, alt: "Modified Safari Tent - With wooden porch" },
-  { src: safariTent5, alt: "Modified Safari Tent - Traditional style" },
-  { src: safariTent6, alt: "Modified Safari Tent - Row of tents" },
+  {
+    src: swissTent1,
+    alt: "Swiss luxury Tent - Side view with scalloped roof",
+  },
+  { src: swissTent2, alt: "Swiss luxury Tent - Back angle view" },
+  { src: swissTent3, alt: "Swiss luxury Tent - Front entrance view" },
+  { src: swissTent4, alt: "Swiss luxury Tent - With wooden porch" },
+  { src: swissTent5, alt: "Swiss luxury Tent - Traditional style" },
+  { src: swissTent6, alt: "Swiss luxury Tent - Row of tents" },
+  { src: swissTent7, alt: "Swiss luxury Tent - Additional view 1" },
+  { src: swissTent8, alt: "Swiss luxury Tent - Additional view 2" },
+  { src: swissTent9, alt: "Swiss luxury Tent - Additional view 3" },
+  { src: swissTent10, alt: "Swiss luxury Tent - Additional view 4" },
+  { src: swissTent11, alt: "Swiss luxury Tent - Additional view 5" },
 ];
 
 const ModifiedSafariTentGallery = () => {
@@ -26,22 +39,27 @@ const ModifiedSafariTentGallery = () => {
 
   const openLightbox = (index: number) => setSelectedImage(index);
   const closeLightbox = () => setSelectedImage(null);
-  
+
   const goToPrevious = () => {
     if (selectedImage !== null) {
-      setSelectedImage(selectedImage === 0 ? images.length - 1 : selectedImage - 1);
+      setSelectedImage(
+        selectedImage === 0 ? images.length - 1 : selectedImage - 1,
+      );
     }
   };
-  
+
   const goToNext = () => {
     if (selectedImage !== null) {
-      setSelectedImage(selectedImage === images.length - 1 ? 0 : selectedImage + 1);
+      setSelectedImage(
+        selectedImage === images.length - 1 ? 0 : selectedImage + 1,
+      );
     }
   };
 
   return (
     <div className="min-h-screen bg-background pt-20">
       <Navbar />
+      
       {/* Header */}
       <header className="bg-tent-dark py-6">
         <div className="container mx-auto px-6">
@@ -68,11 +86,12 @@ const ModifiedSafariTentGallery = () => {
               Product Gallery
             </p>
             <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-6">
-              Modified Safari Tent
+              Swiss luxury Tent
             </h1>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              A refined take on the classic safari tent design, featuring elegant scalloped rooflines, 
-              spacious interiors, and versatile configurations suitable for luxury resorts and glamping sites.
+              A refined take on the classic safari tent design, featuring
+              elegant scalloped rooflines, spacious interiors, and versatile
+              configurations suitable for luxury resorts and glamping sites.
             </p>
           </motion.div>
 
@@ -113,10 +132,12 @@ const ModifiedSafariTentGallery = () => {
             <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-8 text-center">
               Technical Specifications
             </h2>
-            
+
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-4">
-                <h3 className="font-serif text-xl text-tent-tan mb-4">Dimensions</h3>
+                <h3 className="font-serif text-xl text-tent-tan mb-4">
+                  Dimensions
+                </h3>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex justify-between border-b border-border pb-2">
                     <span>Standard Length</span>
@@ -136,9 +157,11 @@ const ModifiedSafariTentGallery = () => {
                   </li>
                 </ul>
               </div>
-              
+
               <div className="space-y-4">
-                <h3 className="font-serif text-xl text-tent-tan mb-4">Materials</h3>
+                <h3 className="font-serif text-xl text-tent-tan mb-4">
+                  Materials
+                </h3>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex justify-between border-b border-border pb-2">
                     <span>Roof Canvas</span>
@@ -159,7 +182,7 @@ const ModifiedSafariTentGallery = () => {
                 </ul>
               </div>
             </div>
-            
+
             <div className="mt-12 text-center">
               <Link
                 to="/#contact"
@@ -189,21 +212,27 @@ const ModifiedSafariTentGallery = () => {
             >
               <X className="w-8 h-8" />
             </button>
-            
+
             <button
               className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 text-white hover:text-tent-tan transition-colors z-10 p-2"
-              onClick={(e) => { e.stopPropagation(); goToPrevious(); }}
+              onClick={(e) => {
+                e.stopPropagation();
+                goToPrevious();
+              }}
             >
               <ChevronLeft className="w-10 h-10" />
             </button>
-            
+
             <button
               className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 text-white hover:text-tent-tan transition-colors z-10 p-2"
-              onClick={(e) => { e.stopPropagation(); goToNext(); }}
+              onClick={(e) => {
+                e.stopPropagation();
+                goToNext();
+              }}
             >
               <ChevronRight className="w-10 h-10" />
             </button>
-            
+
             <motion.img
               key={selectedImage}
               initial={{ opacity: 0, scale: 0.9 }}
@@ -215,7 +244,7 @@ const ModifiedSafariTentGallery = () => {
               className="max-w-[90vw] max-h-[85vh] object-contain rounded-lg"
               onClick={(e) => e.stopPropagation()}
             />
-            
+
             <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/70 text-sm">
               {selectedImage + 1} / {images.length}
             </div>
