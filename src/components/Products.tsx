@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 import tentSwiss from "@/assets/tent-swiss.jpg";
-import tentSafari from "@/assets/tent-safari.jpg";
+import safariTent1 from "@/assets/safari-tent-1.jpg";
 import tentMaharaja from "@/assets/tent-maharaja.jpg";
 import tentConical from "@/assets/tent-conical.jpg";
 import desertTent1 from "@/assets/desert-tent-1.jpg";
@@ -14,10 +14,10 @@ import heroTent from "@/assets/hero-tent.jpg";
 const products = [
   {
     id: 1,
-    name: "African Safari Tent",
-    description: "Classic safari-style luxury tent perfect for wildlife camps",
-    image: tentSafari,
-    link: null,
+    name: "Modified Safari Tent",
+    description: "Classic safari-style luxury tent with elegant scalloped rooflines",
+    image: safariTent1,
+    link: "/products/modified-safari-tent",
   },
   {
     id: 2,
