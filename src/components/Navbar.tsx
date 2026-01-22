@@ -80,12 +80,12 @@ const Navbar = () => {
             className="flex items-center gap-3 group"
           >
             <div className="relative w-11 h-11 rounded-full bg-gradient-to-br from-tent-tan to-tent-gold flex items-center justify-center shadow-lg group-hover:shadow-tent-tan/30 transition-shadow duration-300">
-              <span className="font-serif text-secondary text-base font-bold">A&D</span>
+              <span className="font-serif text-secondary text-base font-bold">L&C</span>
               <div className="absolute inset-0 rounded-full bg-tent-tan/20 animate-ping opacity-0 group-hover:opacity-100" />
             </div>
             <div className="hidden sm:block">
               <span className="font-serif text-secondary-foreground text-base tracking-wide block leading-tight">
-                Angles & Designs
+                Luxury & Cozy
               </span>
               <span className="text-tent-tan/70 text-[10px] uppercase tracking-[0.15em]">
                 Tent Exports
