@@ -64,8 +64,8 @@ const About = () => {
             </h2>
             
             <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-              Angles & Designs Tent Exports has been catering to the varied requirements 
-              of different industries for the past 17 years. We provide a variety of over 
+              Luxury & Cozy Tent Exports has been catering to the varied requirements 
+              of different industries for the past 17 years. We provide a variety of over
               10 unique types of luxury tents, made using the finest materials and designed 
               with meticulous attention to detail.
             </p>

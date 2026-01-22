@@ -104,7 +104,7 @@ const Contact = () => {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Angles & Designs Location"
+                title="Luxury & Cozy Tent Exports Location"
                 className="grayscale contrast-125 opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-500"
               />
             </div>

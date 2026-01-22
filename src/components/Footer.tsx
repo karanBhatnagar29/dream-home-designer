@@ -46,10 +46,10 @@ const Footer = () => {
           <div className="col-span-2 md:col-span-4 lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 rounded-full bg-tent-tan flex items-center justify-center">
-                <span className="font-serif text-secondary text-lg font-bold">A&D</span>
+                <span className="font-serif text-secondary text-lg font-bold">L&C</span>
               </div>
               <span className="font-serif text-secondary-foreground text-xl">
-                Angles & Designs
+                Luxury & Cozy
               </span>
             </div>
             <p className="text-secondary-foreground/60 mb-6 max-w-sm leading-relaxed">
@@ -133,7 +133,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 gap-4">
           <p className="text-secondary-foreground/40 text-sm text-center md:text-left">
-            © {new Date().getFullYear()} Angles & Designs Tent Exports. All rights reserved.
+            © {new Date().getFullYear()} Luxury & Cozy Tent Exports. All rights reserved.
           </p>
           
           <motion.button

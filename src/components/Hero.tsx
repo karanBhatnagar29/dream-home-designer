@@ -30,7 +30,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-tent-tan uppercase tracking-[0.3em] text-sm md:text-base mb-6"
         >
-          Welcome to Angles & Designs Tent Exports
+          Welcome to Luxury & Cozy Tent Exports
         </motion.p>
 
         <motion.h1
