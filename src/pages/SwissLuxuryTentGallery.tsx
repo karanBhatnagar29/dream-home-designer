@@ -5,17 +5,17 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-import swissTent1 from "@/assets/Swiss Luxury Tent/159c0ef6-a432-4ebb-8e95-2b25f290abc6.jpg";
-import swissTent2 from "@/assets/Swiss Luxury Tent/2b0c46fe-54fe-4b80-9ada-a5f00c774672.jpg";
-import swissTent3 from "@/assets/Swiss Luxury Tent/5ea3650e-b30a-400b-b8bc-d58ed6fb2feb.jpg";
-import swissTent4 from "@/assets/Swiss Luxury Tent/5f15e367-a893-4908-926e-ec71c44ae2ad.jpg";
-import swissTent5 from "@/assets/Swiss Luxury Tent/82e57b13-51de-4f9f-837f-392545b8a3ff.jpg";
-import swissTent6 from "@/assets/Swiss Luxury Tent/910c8e47-f9c8-4601-a4d2-c98f058cd84e.jpg";
-import swissTent7 from "@/assets/Swiss Luxury Tent/IMG_0938.AVIF";
-import swissTent8 from "@/assets/Swiss Luxury Tent/IMG_4382.jpg";
-import swissTent9 from "@/assets/Swiss Luxury Tent/a642a452-a79d-48b6-845e-ea8f6f51a0d6.jpg";
-import swissTent10 from "@/assets/Swiss Luxury Tent/ce9d9e4e-8ec8-47a5-918f-5cfdb8c0e387.jpg";
-import swissTent11 from "@/assets/Swiss Luxury Tent/fa06b241-d747-48f8-8716-638375546ed8.jpg";
+import swissTent1 from "@/assets/swiss-luxury-tent/swiss-luxury-tent-01.jpg";
+import swissTent2 from "@/assets/swiss-luxury-tent/swiss-luxury-tent-02.jpg";
+import swissTent3 from "@/assets/swiss-luxury-tent/swiss-luxury-tent-03.jpg";
+import swissTent4 from "@/assets/swiss-luxury-tent/swiss-luxury-tent-04.jpg";
+import swissTent5 from "@/assets/swiss-luxury-tent/swiss-luxury-tent-05.jpg";
+import swissTent6 from "@/assets/swiss-luxury-tent/swiss-luxury-tent-06.jpg";
+import swissTent7 from "@/assets/swiss-luxury-tent/swiss-luxury-tent-07.AVIF";
+import swissTent8 from "@/assets/swiss-luxury-tent/swiss-luxury-tent-08.jpg";
+import swissTent9 from "@/assets/swiss-luxury-tent/swiss-luxury-tent-09.jpg";
+import swissTent10 from "@/assets/swiss-luxury-tent/swiss-luxury-tent-10.jpg";
+import swissTent11 from "@/assets/swiss-luxury-tent/swiss-luxury-tent-11.jpg";
 
 const images = [
   {

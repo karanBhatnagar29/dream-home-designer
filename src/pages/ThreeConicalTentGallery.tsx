@@ -5,14 +5,14 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-import img1 from "@/assets/Three - Conical Tent/1.png";
-import img2 from "@/assets/Three - Conical Tent/1cae65ef-e705-492f-b33e-bc7d249ab418.jpg";
-import img3 from "@/assets/Three - Conical Tent/2c851035-07b5-4501-a0b3-678c3519f9e4.jpg";
-import img4 from "@/assets/Three - Conical Tent/38885a44-6e99-454a-b8de-89c7be50aed9.jpg";
-import img5 from "@/assets/Three - Conical Tent/784146b2-1aaa-4335-ad3b-9a3df9da5f21.jpg";
-import img6 from "@/assets/Three - Conical Tent/IMG_9006.jpg";
-import img7 from "@/assets/Three - Conical Tent/d15e5f5a-7466-4b9a-9658-106341e136a5.jpg";
-import img8 from "@/assets/Three - Conical Tent/dac7c1b5-d0c4-4f9c-87a5-f585d6b57409.jpg";
+import img1 from "@/assets/three-conical-tent/three-conical-tent-01.png";
+import img2 from "@/assets/three-conical-tent/three-conical-tent-02.jpg";
+import img3 from "@/assets/three-conical-tent/three-conical-tent-03.jpg";
+import img4 from "@/assets/three-conical-tent/three-conical-tent-04.jpg";
+import img5 from "@/assets/three-conical-tent/three-conical-tent-05.jpg";
+import img6 from "@/assets/three-conical-tent/three-conical-tent-06.jpg";
+import img7 from "@/assets/three-conical-tent/three-conical-tent-07.jpg";
+import img8 from "@/assets/three-conical-tent/three-conical-tent-08.jpg";
 
 const images = [
   {

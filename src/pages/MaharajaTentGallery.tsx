@@ -5,19 +5,19 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-import img1 from "@/assets/Maha raja/09b3394d-9460-49dd-9bd0-a36c42b9d5f6.jpg";
-import img2 from "@/assets/Maha raja/25aec90a-dac3-4ad1-88a3-6f0a3793fb25.jpg";
-import img3 from "@/assets/Maha raja/300d8737-f510-4625-bcbb-504135cc1d25.jpg";
-import img4 from "@/assets/Maha raja/359258b9-f908-4819-be13-f37f4f867d35.jpg";
-import img5 from "@/assets/Maha raja/5e3f87ce-9d5f-4522-95a3-894f8321cb46.jpg";
-import img6 from "@/assets/Maha raja/IMG_4519.jpg";
-import img7 from "@/assets/Maha raja/IMG_4523.jpg";
-import img8 from "@/assets/Maha raja/IMG_5215.jpg";
-import img9 from "@/assets/Maha raja/IMG_8059.jpg";
-import img10 from "@/assets/Maha raja/IMG_8708.jpg";
-import img11 from "@/assets/Maha raja/a8217797-e2de-4f79-b500-ad276bedeb00.jpg";
-import img12 from "@/assets/Maha raja/b53071cf-9bd5-437a-9ec8-762e663f88d2.jpg";
-import img13 from "@/assets/Maha raja/e6020b30-793a-43cf-b52a-402ab6eec457.jpg";
+import img1 from "@/assets/maharaja-tent/maharaja-tent-01.jpg";
+import img2 from "@/assets/maharaja-tent/maharaja-tent-02.jpg";
+import img3 from "@/assets/maharaja-tent/maharaja-tent-03.jpg";
+import img4 from "@/assets/maharaja-tent/maharaja-tent-04.jpg";
+import img5 from "@/assets/maharaja-tent/maharaja-tent-05.jpg";
+import img6 from "@/assets/maharaja-tent/maharaja-tent-06.jpg";
+import img7 from "@/assets/maharaja-tent/maharaja-tent-07.jpg";
+import img8 from "@/assets/maharaja-tent/maharaja-tent-08.jpg";
+import img9 from "@/assets/maharaja-tent/maharaja-tent-09.jpg";
+import img10 from "@/assets/maharaja-tent/maharaja-tent-10.jpg";
+import img11 from "@/assets/maharaja-tent/maharaja-tent-11.jpg";
+import img12 from "@/assets/maharaja-tent/maharaja-tent-12.jpg";
+import img13 from "@/assets/maharaja-tent/maharaja-tent-13.jpg";
 
 const images = [
   { src: img1, alt: "Maharaja Tent - Royal layout" },

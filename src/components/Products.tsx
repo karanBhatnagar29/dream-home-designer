@@ -4,10 +4,10 @@ import { useRef } from "react";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
-import swissTentHero from "@/assets/Swiss Luxury Tent/IMG_4382.jpg";
+import swissTentHero from "@/assets/swiss-luxury-tent/swiss-luxury-tent-08.jpg";
 import safariTent3 from "@/assets/safari-tent-3.jpg";
-import maharajaTentHero from "@/assets/Maha raja/IMG_8708.jpg";
-import conicalTentHero from "@/assets/Three - Conical Tent/1.png";
+import maharajaTentHero from "@/assets/maharaja-tent/maharaja-tent-10.jpg";
+import conicalTentHero from "@/assets/three-conical-tent/three-conical-tent-01.png";
 import desertTentHero from "@/assets/desert-tent-5.jpg";
 import heroTent from "@/assets/hero-tent.jpg";
 
