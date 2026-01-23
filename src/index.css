@@ -4,50 +4,55 @@
 
 @layer base {
   :root {
-    --background: 40 20% 96%;
-    --foreground: 30 10% 15%;
+    --background: 30 15% 97%;
+    --foreground: 25 20% 12%;
 
-    --card: 40 25% 94%;
-    --card-foreground: 30 10% 15%;
+    --card: 30 20% 95%;
+    --card-foreground: 25 20% 12%;
 
-    --popover: 40 20% 96%;
-    --popover-foreground: 30 10% 15%;
+    --popover: 30 15% 97%;
+    --popover-foreground: 25 20% 12%;
 
-    --primary: 30 40% 60%;
-    --primary-foreground: 40 20% 96%;
+    --primary: 32 65% 45%;
+    --primary-foreground: 40 30% 98%;
 
-    --secondary: 30 10% 20%;
-    --secondary-foreground: 40 20% 96%;
+    --secondary: 25 30% 18%;
+    --secondary-foreground: 40 30% 98%;
 
-    --muted: 35 15% 85%;
-    --muted-foreground: 30 10% 40%;
+    --muted: 30 15% 90%;
+    --muted-foreground: 25 15% 45%;
 
-    --accent: 30 45% 65%;
-    --accent-foreground: 30 10% 15%;
+    --accent: 38 75% 50%;
+    --accent-foreground: 25 20% 12%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 30 20% 80%;
-    --input: 30 20% 80%;
-    --ring: 30 40% 60%;
+    --border: 30 20% 85%;
+    --input: 30 20% 85%;
+    --ring: 32 65% 45%;
 
-    --radius: 0.25rem;
+    --radius: 0.5rem;
 
-    /* Custom luxury tent colors */
-    --tent-brown: 30 15% 16%;
-    --tent-tan: 30 45% 60%;
-    --tent-gold: 35 50% 55%;
-    --tent-cream: 40 30% 92%;
-    --tent-dark: 30 12% 12%;
+    /* Luxury tent brand colors */
+    --tent-brown: 25 35% 18%;
+    --tent-tan: 35 55% 55%;
+    --tent-gold: 38 80% 52%;
+    --tent-cream: 35 40% 95%;
+    --tent-dark: 25 40% 8%;
+    --tent-copper: 25 70% 40%;
+    --tent-sand: 38 45% 85%;
 
-    /* Gradients */
-    --gradient-hero: linear-gradient(180deg, hsl(30 15% 16% / 0.7), hsl(30 15% 16% / 0.4));
-    --gradient-overlay: linear-gradient(to bottom, transparent, hsl(30 15% 16% / 0.8));
+    /* Premium gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(25 40% 8% / 0.85), hsl(32 65% 45% / 0.3));
+    --gradient-overlay: linear-gradient(180deg, hsl(25 40% 8% / 0.7) 0%, hsl(25 40% 8% / 0.4) 50%, hsl(25 40% 8% / 0.8) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(38 80% 52%), hsl(32 65% 45%));
+    --gradient-text: linear-gradient(135deg, hsl(40 30% 98%), hsl(38 75% 50%));
 
-    /* Shadows */
-    --shadow-elegant: 0 25px 50px -12px hsl(30 15% 16% / 0.25);
-    --shadow-card: 0 10px 40px -15px hsl(30 15% 16% / 0.2);
+    /* Premium shadows */
+    --shadow-elegant: 0 25px 60px -15px hsl(25 40% 8% / 0.35);
+    --shadow-card: 0 15px 50px -12px hsl(25 40% 8% / 0.25);
+    --shadow-glow: 0 0 40px hsl(38 80% 52% / 0.3);
 
     /* Transitions */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);

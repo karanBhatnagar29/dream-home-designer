@@ -57,6 +57,8 @@ export default {
           gold: "hsl(var(--tent-gold))",
           cream: "hsl(var(--tent-cream))",
           dark: "hsl(var(--tent-dark))",
+          copper: "hsl(var(--tent-copper))",
+          sand: "hsl(var(--tent-sand))",
         },
       },
       borderRadius: {
