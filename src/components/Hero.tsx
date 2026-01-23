@@ -44,7 +44,7 @@ const Hero = () => {
       />
 
       {/* Content */}
-      <div className="relative z-10 h-full flex flex-col items-center justify-center px-6 text-center">
+      <div className="relative z-10 h-full flex flex-col items-center justify-center px-6 text-center mt-6">
         {/* Premium Badge */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
@@ -133,41 +133,39 @@ const Hero = () => {
             Get Quote
           </button>
         </motion.div>
-      </div>
 
       {/* Stats - Repositioned and Responsive */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 1.3 }}
-        className="absolute bottom-28 md:bottom-32 left-0 right-0 px-4 z-10"
-      >
-        <div className="max-w-4xl mx-auto grid grid-cols-3 gap-3 sm:gap-6 md:gap-8 lg:gap-12">
-          {[
-            { value: "17+", label: "Years", sublabel: "Experience" },
-            { value: "50+", label: "Countries", sublabel: "Served" },
-            { value: "1000+", label: "Tents", sublabel: "Delivered" },
-          ].map((stat, index) => (
-            <motion.div 
-              key={index} 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 1.4 + index * 0.1 }}
-              className="text-center p-2 sm:p-3 md:p-4 rounded-lg md:rounded-xl backdrop-blur-md bg-tent-dark/50 border border-tent-gold/20 hover:border-tent-gold/40 transition-all duration-300"
-            >
-              <div className="text-tent-gold font-serif text-lg sm:text-2xl md:text-3xl lg:text-4xl font-bold drop-shadow-[0_2px_10px_rgba(212,165,67,0.3)]">
-                {stat.value}
-              </div>
-              <div className="text-white/90 text-[9px] sm:text-xs md:text-sm uppercase tracking-wider mt-0.5 sm:mt-1 font-medium">
-                {stat.label}
-              </div>
-              <div className="text-white/60 text-[8px] sm:text-[10px] md:text-xs uppercase tracking-wider">
-                {stat.sublabel}
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </motion.div>
+        {/* Stats - Minimalist Divider Style */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 1.3 }}
+          className="mt-16 md:mt-24 w-full px-4"
+        >
+          {/* <div className="max-w-4xl mx-auto flex justify-center items-center gap-6 md:gap-12 text-center text-white/80">
+            {[
+              { value: "17+", label: "Years Experience" },
+              { value: "50+", label: "Countries Served" },
+              { value: "1000+", label: "Tents Delivered" },
+            ].map((stat, index) => (
+              <motion.div 
+                key={index} 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.6, delay: 1.4 + index * 0.1 }}
+                className="flex flex-col items-center gap-1"
+              >
+                <div className="text-tent-gold font-serif text-xl sm:text-2xl font-bold">
+                  {stat.value}
+                </div>
+                <div className="text-[10px] sm:text-xs uppercase tracking-widest opacity-80">
+                  {stat.label}
+                </div>
+              </motion.div>
+            ))}
+          </div> */}
+        </motion.div>
+      </div>
 
       {/* Scroll Indicator */}
       <motion.div
