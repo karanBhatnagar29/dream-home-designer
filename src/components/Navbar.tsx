@@ -128,7 +128,7 @@ const Navbar = () => {
           {/* CTA Button */}
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href="tel:+919783271001"
+              href="tel:+917297979244"
               className="group flex items-center gap-2 bg-gradient-to-r from-tent-tan to-tent-gold text-secondary px-5 py-2.5 rounded-full font-medium text-sm shadow-lg hover:shadow-tent-tan/40 transition-all duration-300 hover:scale-105"
             >
               <Phone className="w-4 h-4 group-hover:rotate-12 transition-transform duration-300" />
@@ -181,7 +181,7 @@ const Navbar = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 20 }}
                 transition={{ delay: 0.4, duration: 0.4 }}
-                href="tel:+919783271001"
+                href="tel:+917297979244"
                 className="flex items-center gap-3 bg-gradient-to-r from-tent-tan to-tent-gold text-secondary px-8 py-4 rounded-full font-medium mt-4 shadow-lg"
               >
                 <Phone className="w-5 h-5" />

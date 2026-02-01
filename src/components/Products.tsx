@@ -4,9 +4,9 @@ import { useRef } from "react";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
-import swissTentHero from "@/assets/swiss-luxury-tent/swiss-luxury-tent-08.jpg";
+import swissTentHero from "@/assets/all-weather-luxury-swiss-cottage.png";
 import safariTent3 from "@/assets/safari-tent-3.jpg";
-import maharajaTentHero from "@/assets/maharaja-tent/maharaja-tent-10.jpg";
+import maharajaTentHero from "@/assets/bharat_tent_manufacturers_1768541001_3811120608185622833_5799231523.jpg.jpeg";
 import conicalTentHero from "@/assets/three-conical-tent/three-conical-tent-01.png";
 import desertTentHero from "@/assets/desert-tent-5.jpg";
 import heroTent from "@/assets/hero-tent.jpg";

@@ -7,14 +7,14 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Call Us",
-    value: "+91-97832 71001",
-    href: "tel:+919783271001",
+    value: "+91 72979 79244",
+    href: "tel:+917297979244",
   },
   {
     icon: Mail,
     label: "Email Us",
-    value: "info@anglesanddesigns.com",
-    href: "mailto:info@anglesanddesigns.com",
+    value: "luxuryandcozytentexport@gmail.com",
+    href: "mailto:luxuryandcozytentexport@gmail.com",
   },
   {
     icon: MapPin,
