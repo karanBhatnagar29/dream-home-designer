@@ -7,23 +7,11 @@ const footerLinks = {
     "African Safari Tent",
     "Swiss Luxury Tent",
     "Maharaja Tent",
-    "Conical Tent",
+    // "Conical Tent",
     "Desert Tent",
   ],
-  company: [
-    "About Us",
-    "Our Story",
-    "Careers",
-    "Blog",
-    "Contact",
-  ],
-  support: [
-    "FAQs",
-    "Shipping",
-    "Returns",
-    "Custom Orders",
-    "Maintenance",
-  ],
+  company: ["About Us", "Our Story", "Careers", "Blog", "Contact"],
+  support: ["FAQs", "Shipping", "Returns", "Custom Orders", "Maintenance"],
 };
 
 const socialLinks = [
@@ -47,17 +35,21 @@ const Footer = () => {
           <div className="col-span-2 md:col-span-4 lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center overflow-hidden">
-                <img src={logo} alt="L&C Logo" className="w-full h-full object-contain" />
+                <img
+                  src={logo}
+                  alt="L&C Logo"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <span className="font-serif text-secondary-foreground text-xl">
                 Luxury & Cozy
               </span>
             </div>
             <p className="text-secondary-foreground/60 mb-6 max-w-sm leading-relaxed">
-              Leading tent manufacturer in Jodhpur, crafting luxury tents for 
+              Leading tent manufacturer in Jodhpur, crafting luxury tents for
               glamping, events, and exclusive retreats since 2007.
             </p>
-            
+
             {/* Social Links */}
             <div className="flex gap-4">
               {socialLinks.map((social) => (
@@ -134,9 +126,10 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 gap-4">
           <p className="text-secondary-foreground/40 text-sm text-center md:text-left">
-            © {new Date().getFullYear()} Luxury & Cozy Tent Exports. All rights reserved.
+            © {new Date().getFullYear()} Luxury & Cozy Tent Exports. All rights
+            reserved.
           </p>
-          
+
           <motion.button
             onClick={scrollToTop}
             whileHover={{ y: -2 }}
