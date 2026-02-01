@@ -4,11 +4,11 @@ import { useRef } from "react";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
-import swissTentHero from "@/assets/all-weather-luxury-swiss-cottage.png";
+import swissTentHero from "@/assets/swiss.png";
 import safariTent3 from "@/assets/safari-tent-3.jpg";
 import maharajaTentHero from "@/assets/bharat_tent_manufacturers_1768541001_3811120608185622833_5799231523.jpg.jpeg";
 import conicalTentHero from "@/assets/three-conical-tent/three-conical-tent-01.png";
-import desertTentHero from "@/assets/desert-tent-5.jpg";
+import desertTentHero from "@/assets/desert-cover.png";
 import heroTent from "@/assets/hero-tent.jpg";
 
 const products = [
@@ -33,6 +33,7 @@ const products = [
     image: maharajaTentHero,
     link: "/products/maharaja-tent",
   },
+  /*
   {
     id: 4,
     name: "Three-Conical Tent",
@@ -40,9 +41,10 @@ const products = [
     image: conicalTentHero,
     link: "/products/three-conical-tent",
   },
+  */
   {
     id: 5,
-    name: "African Desert Tent",
+    name: "Desert Tent",
     description: "Designed for harsh desert environments with style",
     image: desertTentHero,
     link: "/products/african-desert-tent",
@@ -84,7 +86,7 @@ const Products = () => {
         </motion.div>
 
         {/* Products Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8">
           {products.map((product, index) => (
             <motion.article
               key={product.id}
@@ -96,7 +98,7 @@ const Products = () => {
               {product.link ? (
                 <Link to={product.link}>
                   <div className="relative overflow-hidden rounded-lg shadow-card">
-                    <div className="aspect-[4/5] overflow-hidden">
+                    <div className="aspect-[4/3] overflow-hidden">
                       <img
                         src={product.image}
                         alt={product.name}
@@ -124,7 +126,7 @@ const Products = () => {
                 </Link>
               ) : (
                 <div className="relative overflow-hidden rounded-lg shadow-card">
-                  <div className="aspect-[4/5] overflow-hidden">
+                  <div className="aspect-[4/3] overflow-hidden">
                     <img
                       src={product.image}
                       alt={product.name}
