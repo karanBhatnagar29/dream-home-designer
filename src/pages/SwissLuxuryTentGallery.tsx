@@ -16,6 +16,7 @@ import swissTent8 from "@/assets/swiss-luxury-tent/swiss-luxury-tent-08.jpg";
 import swissTent9 from "@/assets/swiss-luxury-tent/swiss-luxury-tent-09.jpg";
 import swissTent10 from "@/assets/swiss-luxury-tent/swiss-luxury-tent-10.jpg";
 import swissTent11 from "@/assets/swiss-luxury-tent/swiss-luxury-tent-11.jpg";
+import swissGallery from "@/assets/swiss-gallery.jpeg";
 
 const images = [
   {
@@ -116,6 +117,30 @@ const ModifiedSafariTentGallery = () => {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Layout & Structure Section */}
+      <section className="py-16 md:py-24 bg-card/50">
+        <div className="container mx-auto px-6">
+           <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
+            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-8">
+              Layout & Structure
+            </h2>
+            <div className="max-w-4xl mx-auto rounded-lg overflow-hidden shadow-elegant bg-white p-4">
+              <img
+                src={swissGallery}
+                alt="Swiss Luxury Tent Layout Plan"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+          </motion.div>
         </div>
       </section>
 

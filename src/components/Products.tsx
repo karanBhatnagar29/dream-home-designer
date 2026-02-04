@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
-import swissTentHero from "@/assets/swiss.png";
+import swissTentHero from "@/assets/swiss-exterior.jpeg";
 import safariTent3 from "@/assets/safari-tent-3.jpg";
 import maharajaTentHero from "@/assets/bharat_tent_manufacturers_1768541001_3811120608185622833_5799231523.jpg.jpeg";
 import conicalTentHero from "@/assets/three-conical-tent/three-conical-tent-01.png";
